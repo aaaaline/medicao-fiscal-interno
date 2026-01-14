@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 30px;
+  color: #333;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: #efefef;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ======================
+   SEARCH
+====================== */
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Linha input + botão */
+.search-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botão download */
+.top-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.download-btn {
+  background-color: #28a745;
+  font-size: 12px;
+}
+
+/* Botões */
+button {
+  background-color: #333974;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.primary-btn {
+  white-space: nowrap;
+}
+
+.secondary-btn {
+  margin-top: 10px;
+  background-color: #007bff;
+}
+
+.danger-btn {
+  background-color: #dc3545;
+}
+
+/* Resultado */
+.resultado-container {
+  text-align: left;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Erro */
+.erro-container {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: #fff5f5;
+}
+
+.erro-texto {
+  color: red;
+  font-weight: bold;
+}
+
+/* ======================
+   RESPONSIVO (MOBILE)
+====================== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .app {
+    padding: 15px;
+    margin-bottom: 100px;
+  }
+
+  .search-row {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .top-actions {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Destaque de erro nos campos */
+.input-error {
+  border: 2px solid #dc3545;
+  outline: none;
+}
+
+.field-error {
+  display: block;
+  margin-top: 4px;
+  color: #dc3545;
+  font-size: 12px;
+}
+
+/* Mensagem final */
+.footer-hint {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4d4d4d;
+  text-align: center;
+}
